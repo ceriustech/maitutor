@@ -4,6 +4,7 @@ import { Gltf, Environment, CameraControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { Camera } from 'three';
 import { Teacher } from './teacher';
+import CameraManager from './CameraManager';
 
 const Expereience = () => {
 	return (
@@ -16,25 +17,6 @@ const Expereience = () => {
 				<Gltf src="/models/classroom_default.glb" position={[0.2, -1.7, -2]} />
 			</Canvas>
 		</>
-	);
-};
-
-const CameraManager = () => {
-	return (
-		<CameraControls
-			minZoom={1}
-			maxZoom={3}
-			poloarRotateSpeed={-0.3}
-			azimuthRotateSpeed={-0.3}
-			mouseButtons={{
-				left: 1,
-				wheel: 16,
-			}}
-			touches={{
-				one: 32,
-				two: 512,
-			}}
-		/>
 	);
 };
 
