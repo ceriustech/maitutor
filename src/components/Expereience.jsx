@@ -3,7 +3,7 @@
 import { Gltf, Environment, CameraControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { Camera } from 'three';
-import { Teacher } from './teacher';
+import { Teacher } from './Teacher';
 import CameraManager from './CameraManager';
 
 const Expereience = () => {
